@@ -1,0 +1,26 @@
+.zigconnect-admin .strong { font-weight:bold; }
+.zigconnect-admin .right { text-align:right; }
+.zigconnect-admin .mandatory { color:#e21; }
+.zigconnect-admin .floatRight { float:right; display:inline; }
+.zigconnect-admin .clearer { height:0px; clear:both; line-height:0px; overflow:hidden; font-size:0; }
+.zigconnect-admin #icon-zigconnect { background:url(../images/preferences-system-windows-32.png) center no-repeat !important; }
+.zigconnect-admin .wrap-left { float:left; display:inline; width:70%; }
+.zigconnect-admin .wrap-right { float:left; display:inline; width:30%; }
+.zigconnect-admin .donate form { float:right; display:inline; text-align:right; width:150px; }
+.zigconnect-admin .col-pad { padding-right:15px; }
+.zigconnect-admin table.widefat { margin-bottom:15px; }
+.zigconnect-admin img.icon { vertical-align:middle; margin-bottom:1px; }
+.zigconnect-admin img.floatRight { margin-bottom:0; }
+.zigconnect-admin form input.checkbox { vertical-align:middle; margin-bottom:1px; }
+
+.zigconnect-metabox-table { width:100%; border-collapse:collapse; }
+.zigconnect-metabox-table td.right { text-align:right; }
+.zigconnect-metabox-table td { padding:5px 0; }
+.zigconnect-metabox-table tr.firstrow td { border-top:1px solid #dfdfdf; }
+.zigconnect-metabox-searchwrapper { border-top:1px solid #dfdfdf; margin-top:5px; padding-top:5px; }
+.zigconnect-metabox-searchform { display:inline; }
+.zigconnect-metabox-addallbutton { float:right; display:inline; }
+.zigconnect-metabox-loader { vertical-align:middle; margin-bottom:2px; }
+.zigconnect-metabox-searchresults { display:inline; }
+.zigconnect-metabox-clearer { height:0px; clear:both; line-height:0px; overflow:hidden; font-size:0; }
+

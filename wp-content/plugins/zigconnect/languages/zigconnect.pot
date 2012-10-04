@@ -1,0 +1,389 @@
+# ZIGCONNECT TRANSLATION TEMPLATE
+# Copyright (C) 2011 ZigPress
+# This file is distributed under the same license as the ZigConnect package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.4\n"
+"POT-Creation-Date: 2011-02-17 11:05+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: zigconnect.php:1004
+msgid "A <strong>connection</strong> defines a link between two post <strong>types</strong>."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "A <strong>data item</strong> is a piece of data stored with a link according to a defined field."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "A <strong>field</strong> is a definition for a piece of data that can be stored with any link belonging to a specific connection."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "A <strong>link</strong> is between two actual posts whose types are connected."
+msgstr ""
+
+#: zigconnect.php:392
+msgid "Add"
+msgstr ""
+
+#: zigconnect.php:635
+msgid "Add New Connection"
+msgstr ""
+
+#: zigconnect.php:800
+msgid "Add New Field"
+msgstr ""
+
+#: zigconnect.php:775
+msgid "Alphanumeric, will be converted to lower case"
+msgstr ""
+
+#: zigconnect.php:980
+msgid "Apply"
+msgstr ""
+
+#: zigconnect.php:693
+msgid "Are you sure? Deleting a connection cannot be undone!"
+msgstr ""
+
+#: zigconnect.php:854
+msgid "Are you sure? Deleting a field cannot be undone!"
+msgstr ""
+
+#: zigconnect.php:964
+msgid "Are you sure? Deleting a user list cannot be undone!"
+msgstr ""
+
+#: zigconnect.php:577
+#: zigconnect.php:751
+msgid "Back without saving"
+msgstr ""
+
+#: zigconnect.php:552
+msgid "Brought to you by ZigPress"
+msgstr ""
+
+#: zigconnect.php:977
+msgid "Bulk Actions"
+msgstr ""
+
+#: zigconnect.php:839
+msgid "Connection"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Connection already exists."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Connection updated."
+msgstr ""
+
+#: zigconnect.php:759
+msgid "Connection:"
+msgstr ""
+
+#: zigconnect.php:678
+msgid "Data Fields"
+msgstr ""
+
+#: zigconnect.php:840
+msgid "Data Items"
+msgstr ""
+
+#: zigconnect.php:709
+#: zigconnect.php:693
+#: zigconnect.php:868
+#: zigconnect.php:854
+#: zigconnect.php:978
+msgid "Delete"
+msgstr ""
+
+#: zigconnect.php:964
+msgid "Delete List"
+msgstr ""
+
+#: zigconnect.php:675
+msgid "Details"
+msgstr ""
+
+#: zigconnect.php:691
+#: zigconnect.php:852
+msgid "Edit"
+msgstr ""
+
+#: zigconnect.php:577
+msgid "Edit Connection"
+msgstr ""
+
+#: zigconnect.php:751
+msgid "Edit Field"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Field already exists."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Field updated."
+msgstr ""
+
+#: zigconnect.php:800
+msgid "Fields"
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "For now all data fields are free text fields."
+msgstr ""
+
+#: zigconnect.php:585
+msgid "From:"
+msgstr ""
+
+#: zigconnect.php:837
+msgid "ID"
+msgstr ""
+
+#: zigconnect.php:546
+msgid "If you find ZigConnect useful, please keep it free and actively developed by making a donation."
+msgstr ""
+
+#: zigconnect.php:951
+msgid "Items;"
+msgstr ""
+
+#: zigconnect.php:952
+msgid "Linked Items"
+msgstr ""
+
+#: zigconnect.php:677
+msgid "Links"
+msgstr ""
+
+#: zigconnect.php:838
+msgid "Name"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Name or prompt not entered."
+msgstr ""
+
+#: zigconnect.php:774
+msgid "Name:"
+msgstr ""
+
+#: zigconnect.php:1026
+msgid "Next deactivation removes:"
+msgstr ""
+
+#: zigconnect.php:721
+msgid "No connections found."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "No connections were selected."
+msgstr ""
+
+#: zigconnect.php:880
+msgid "No fields found."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "No fields were selected."
+msgstr ""
+
+#: zigconnect.php:990
+msgid "No lists found."
+msgstr ""
+
+#: zigconnect.php:506
+msgid "No posts of type"
+msgstr ""
+
+#: zigconnect.php:1016
+msgid "Options"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Options saved."
+msgstr ""
+
+#: zigconnect.php:557
+msgid "Other ZigPress plugins"
+msgstr ""
+
+#: zigconnect.php:778
+msgid "Prompt:"
+msgstr ""
+
+#: zigconnect.php:884
+msgid "Pull down this page\\'s Help tab (top right) for assistance."
+msgstr ""
+
+#: zigconnect.php:613
+#: zigconnect.php:676
+msgid "Reciprocal?"
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "Returns an array of post IDs of posts that are of the specified type and are linked from the current post."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "Returns an associative array of key+value pairs for the data attached to the link between the current post and the specified post."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "Returns the ID of the link between the current post and the specified post."
+msgstr ""
+
+#: zigconnect.php:782
+#: zigconnect.php:1030
+msgid "Save Changes"
+msgstr ""
+
+#: zigconnect.php:495
+msgid "Search"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Selected connections and all related data deleted."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Selected fields and all related data deleted."
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Selected lists deleted."
+msgstr ""
+
+#: zigconnect.php:1027
+msgid "Settings"
+msgstr ""
+
+#: zigconnect.php:547
+msgid "Suggested donation: &euro;20 - &euro;40 or an amount of your choice. Thanks!"
+msgstr ""
+
+#: zigconnect.php:537
+msgid "Support this plugin!"
+msgstr ""
+
+#: zigconnect.php:1027
+msgid "Tables"
+msgstr ""
+
+#: zigconnect.php:1020
+msgid "The options below simply allow you to uninstall cleanly if you need to. Use with care!"
+msgstr ""
+
+#: zigconnect.php:1019
+msgid "This plugin essentially just manages data, so there are no options that customise it."
+msgstr ""
+
+#: zigconnect.php:599
+msgid "To:"
+msgstr ""
+
+#: zigconnect.php:1041
+msgid "Type(s) not selected."
+msgstr ""
+
+#: zigconnect.php:950
+msgid "User"
+msgstr ""
+
+#: zigconnect.php:914
+msgid "User Lists"
+msgstr ""
+
+#: zigconnect.php:1041
+#: zigconnect.php:1004
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "ZigConnect General Help"
+msgstr ""
+
+#: zigconnect.php:1004
+msgid "ZigConnect Template Tags"
+msgstr ""
+
+#: zigconnect.php:556
+msgid "ZigConnect page"
+msgstr ""
+
+#: zigconnect.php:1
+msgid "ZigConnections"
+msgstr ""
+
+#: zigconnect.php:558
+msgid "ZigPress on Facebook"
+msgstr ""
+
+#: zigconnect.php:559
+msgid "ZigPress on Twitter"
+msgstr ""
+
+#: zigconnect.php:506
+msgid "found."
+msgstr ""
+
+#: zigconnect.php:555
+msgid "is a web agency specialising in WordPress-based solutions. We have also released a number of free plugins to support the WordPress community."
+msgstr ""
+
+#: zigconnect.php:614
+msgid "means connection is bidirectional"
+msgstr ""
+
+#: zigconnect.php:761
+msgid "please select"
+msgstr ""
+
+#: zigconnect-core.php:1
+msgid "ZigConnect requires MySQL 4.1 or newer. Please update your server."
+msgstr ""
+
+#: zigconnect-core.php:1
+msgid "ZigConnect requires PHP 5.0.0 or newer. Please update your server."
+msgstr ""
+
+#: zigconnect-core.php:1
+msgid "ZigConnect requires WordPress 3.0.4 or newer. Please update your installation."
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:67
+msgid "Link to:"
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:34
+msgid "Please log in or register to build a user list."
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:1
+msgid "Shows how many items in the user\\'s list"
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:66
+msgid "Title:"
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:33
+msgid "Your list contains"
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:34
+msgid "Your list is empty."
+msgstr ""
+
+#: zigconnect-widget-userlistinfo.php:33
+msgid "items."
+msgstr ""
