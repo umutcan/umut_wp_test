@@ -23,7 +23,18 @@
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
-
+        <div>
+            <?
+            $cat=get_the_category_list();
+            if(strpos($cat, "Show"))
+                    $isShow=true;
+            $list=get_related_posts_list($isShow); 
+                //var_dump($list);
+                for($i=1;$i<count($list)+1;$i++){
+                    echo $list[$i]."<br/>";
+                }
+            ?>
+        </div>
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
