@@ -209,7 +209,7 @@ class ZigConnect
 		{
 		if (!wp_verify_nonce($_POST['zigconnect_metaboxes'], plugin_basename(__FILE__))) return $post_id; # crap out if bad nonce
 		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return $post_id; # crap out if autosave
-		if (!current_user_can('manage_options')) return $post_id; # crap out if not an admin - CHANGE THIS TO SUITABLE CUSTOM TYPE PERMISSIONS
+		if (!current_user_can('edit_others_posts')) return $post_id; # crap out if not an admin - CHANGE THIS TO SUITABLE CUSTOM TYPE PERMISSIONS
 		global $post;
 		$strThisType = $post->post_type;
 		$arrConnections = $_POST['zigconnect_metabox_connections'];
