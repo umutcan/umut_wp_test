@@ -24,6 +24,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
         <div>
+            
             <?
             $cat=get_the_category_list();
             if(strpos($cat, "Show"))
@@ -33,6 +34,15 @@
                 for($i=1;$i<count($list)+1;$i++){
                     echo $list[$i]."<br/>";
                 }
+                ?>
+            <?
+            if(!strpos($cat, "Person")) {   
+               $list= get_episodes($isShow);
+            $first=$isShow?1:0;
+            for($i=$first;$i<count($list)+1;$i++){
+                    echo $list[$i]."<br/>";
+                }
+            }
             ?>
         </div>
 	<footer class="entry-meta">
