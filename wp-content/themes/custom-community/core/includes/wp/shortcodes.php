@@ -348,6 +348,16 @@ function cc_list_posts($atts,$content = null) {
         'posts_per_page' => $amount
     );
     
+    if(isset($atts["umut_post_ids"])){
+        $page_id = explode(',',$atts["umut_post_ids"]);
+        $args = array(
+        'orderby'        => $orderby,
+        'order'          => $order,
+        'post_type'      => $post_type,
+        'post__in'       => $page_id,
+        'category_name'  => $category_name,
+        'posts_per_page' => $amount
+    );}
     remove_all_filters('posts_orderby');
     query_posts($args);
     

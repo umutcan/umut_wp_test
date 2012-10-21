@@ -18,6 +18,11 @@ margin-left: auto;
 margin-right: auto; 
 }
 
+.alignmid { 
+float:left;
+margin-left: 30%;
+
+}
 .alignleft {
 float: left;
 margin-right: 15px;
@@ -43,4 +48,45 @@ font-size: 0.9em;
 line-height: 17px;
 padding: 0 4px 5px 0;
 margin: 0;
+}
+
+/*umt*/
+
+div.relpostshow{
+    
+    width:100px; 
+    /*
+    background-color:red; 
+    */
+    float:left; 
+    margin-left:20px;
+
+}
+
+div.relpostperson{
+    height: 100px;
+    width:1000px; 
+    /*
+    background-color:green; 
+    */
+    float:left; 
+    margin-left:20px;
+
+}
+
+div.relcont{
+    
+    width:1000px; 
+    /*
+    background-color:green; 
+    */
+    float:left; 
+    margin-bottom:20px;
+}
+
+.ftimg{
+    float:left;
+
+    margin-top: -10px;
+    margin-right: 20px;
 }

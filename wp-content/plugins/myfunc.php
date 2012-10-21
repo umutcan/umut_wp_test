@@ -26,7 +26,14 @@ function get_related_posts_list($isShow) {
         $p = get_post($postid);
         //var_dump($p);
         $role = zc_get_linkdata($postid,$zcid);
-        $temp[$i]["link"] = "<a href='" . $p->guid . "'>" . $p->post_title . "</a>" . " as " . $role['role'];
+        if(has_post_thumbnail($postid))
+            $img=get_the_post_thumbnail($postid,array(100,100),array('class'=>'ftimg'));
+        else
+            $img="<img src='".get_template_directory_uri()."/images/slideshow/noftrdimg-222x160.jpg' height='100px' width='100px'/>";
+        if($isShow)
+            $temp[$i]["link"] = "<div class='ftimg'>".$img."</div><div><a href='" . $p->guid . "'>" . $p->post_title . "</a>" . " <br> (" . $role['role'].")</div>";
+        else
+            $temp[$i]["link"] = "<div class='ftimg'>".$img."</div><div style=' margin-top:30px;'><a href='" . $p->guid . "'>" . $p->post_title . "</a>" . " ( " . $role['role'].")</div>";
         $temp[$i]["order"] = $role["order"];
         $i++;
     }
@@ -72,13 +79,13 @@ function get_episodes($isShow) {
     else{
         $i=1;
         foreach ($temp as $row) {
-            $list[]=$row["link"];
+            $list[]=array('link'=>$row["link"],'epno'=>$row["epno"]);
             
         }
     }
     return $list;
 
-    ;
+    
 }
 
 ?>

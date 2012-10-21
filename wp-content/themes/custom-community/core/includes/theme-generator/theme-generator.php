@@ -545,10 +545,15 @@ class CC_Theme_Generator{
 		global $cap;
 		
 		if( $cap->preview == true  || $cap->default_homepage_last_posts == 'show') {
+                    if($cap->umut_three_posts!='')
 			$args = array(
 				'amount' => '3',
+                                'umut_post_ids'=>$cap->umut_three_posts,
 		 	);
-				
+                    else
+			$args = array(
+				'amount' => '3',
+		 	);	
 			echo '<div style="margin-top:-44px;">'.cc_list_posts($args).'</div>'; 
 		}
 	}

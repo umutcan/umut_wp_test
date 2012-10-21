@@ -314,7 +314,14 @@ function cap_get_options() {
 			"default_homepage_last_posts", 
 			array('show', 'hide'),
 			"show", 
-			false),	
+			false),
+                 new TextOption(
+			"Three Post IDs", 
+			"Three featured posts", 
+			"umut_three_posts", 
+			"",
+			"",
+			false),   
 		new DropdownOption(
 			"Post listing style", 
 			"Select a style how to display the latest posts. <br> 
