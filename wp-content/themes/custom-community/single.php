@@ -96,6 +96,7 @@
                                         $first = $isShow ? 1 : 0;
                                         $count= $isShow ? count($list) : 2;
                                         $nav=array();
+                                        
                                         for ($i = $first; $i < $count + 1; $i++) {
                                             
                                             if($first==1)
@@ -103,11 +104,11 @@
                                             else if($first==0){
                                                 
                                                 if($list[$i]['epno']==$list[0]['epno'])
-                                                    $nav["center"]="<div class='alignmid' >".$list[$i]['link'] . "</div>";
+                                                    $nav["center"]="<div class='alignmid' ><div style='width:200px; text-align:center;'>&nbsp;".$list[$i]['link'] . "</div></div>";
                                                 else if(strcmp ($list[$i]['epno'],"e".$list[0]['epno'])==0)
-                                                    $nav["right"]= "<div class='alignright' >".$list[$i]['link'] . "</div>";
+                                                    $nav["right"]= "<div class='alignright' ><div style='width:205px; text-align:right;'>".$list[$i]['link'] . "</div></div>";
                                                 else if(strcmp ($list[$i]['epno'],"e".$list[0]['epno'])<0)
-                                                    $nav["left"]="<div class='alignleft' >".$list[$i]['link'] . "</div>";
+                                                    $nav["left"]="<div class='alignleft' ><div style='width:205px;text-align:left;'>".$list[$i]['link'] . "&nbsp;</div></div>";
                                                 
                                                 if($i==2) {
                                                     echo $nav["left"].$nav["center"].$nav["right"];
