@@ -70,15 +70,20 @@
                                     <div class="clear"></div>
                                     <?php wp_link_pages(array('before' => __('<p class="cc_pagecount"><strong>Pages:</strong> ', 'cc'), 'after' => '</p>', 'next_or_number' => 'number')); ?>
                                 </div>
+                                    
                                 <div class="relcont">
 
                                     <?
                                     $cat = get_the_category_list();
                                     $cssclass='relpostperson';
+                                    $relTitle="Dizi ve Filmleri";
                                     if (strpos($cat, "Dizi/Film")){
+                                        $relTitle="Oyuncular";
+                                        
                                         $isShow = true;
                                         $cssclass='relpostshow';
                                     }
+                                    echo "<p><strong>".$relTitle."</strong></p>";
                                     $list = get_related_posts_list($isShow);
                                     //var_dump($list);
                                    
@@ -89,9 +94,13 @@
                                    
                                     ?>
                                     </div>
+                                    
                                     <div>
+                                        
                                     <?
                                     if (!strpos($cat, "Kişiler")) {
+                                        
+                                        echo "<p><strong>Bölümler:</strong></p>";
                                         $list = get_episodes($isShow);
                                         $first = $isShow ? 1 : 0;
                                         $count= $isShow ? count($list) : 2;
@@ -138,8 +147,7 @@
                                 </div>
         <?php } ?>	
 
-                            <div class="alignleft"><?php previous_post_link('%link', '<span class="meta-nav">' . _x('&larr;', 'Previous post link', 'cc') . '</span> %title'); ?></div>
-                            <div class="alignright"><?php next_post_link('%link', '%title <span class="meta-nav">' . _x('&rarr;', 'Next post link', 'cc') . '</span>'); ?></div>
+                            
                         </div>
                     </div>
 
