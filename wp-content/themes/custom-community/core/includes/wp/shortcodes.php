@@ -576,7 +576,7 @@ function slider($atts,$content = null) {
             if($caption == 'on'){
                 $tmp .=' <div class="info" >'. chr(13);
                 $tmp .='    <h2><a href="'.$url.'" >'.get_the_title().'</a></h2>'. chr(13);
-                $tmp .='    <p>'.get_the_excerpt().'</p>'. chr(13);
+                //$tmp .='    <p>'.get_the_excerpt().'</p>'. chr(13);
                 $tmp .=' </div>'. chr(13);
             }
             $tmp .='</div>'. chr(13);

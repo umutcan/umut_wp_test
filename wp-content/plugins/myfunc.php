@@ -63,6 +63,7 @@ function get_episodes($isShow) {
     $i = 0;
     foreach ($zc as $postid) {
         $p = get_post($postid);
+        $temp[$i]["cat"]=get_the_category_list('','',$postid);
         //var_dump($p);
         $role = zc_get_linkdata($postid,$zcid);
   
@@ -79,10 +80,17 @@ function get_episodes($isShow) {
     else{
         $i=1;
         foreach ($temp as $row) {
-            $list[]=array('link'=>$row["link"],'epno'=>$row["epno"]);
+        
+            if(strpos($row["cat"], "Dizi/Film"))
+                $list[0]=array('link'=>$row["link"],'epno'=>$row["epno"]);
+            else{
+                $list[$i]=array('link'=>$row["link"],'epno'=>$row["epno"]);
+                $i++;
+            }
             
         }
     }
+ 
     return $list;
 
     

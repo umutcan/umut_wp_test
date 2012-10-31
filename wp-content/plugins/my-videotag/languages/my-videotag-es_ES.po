@@ -1,0 +1,118 @@
+# giObanii fiOri <http://toxigeek.com>, 2011.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: My-videotag 1.4.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/my-videotag\n"
+"POT-Creation-Date: 2011-08-26 13:02-0600\n"
+"PO-Revision-Date: 2011-11-19 09:52-0600\n"
+"Last-Translator: giObanii fiOri <3motronik@gmail.com>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: MEXICO\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Settings"
+msgstr "Ajustes"
+
+msgid "From version 1.3.6 you can customize the size of each video,  Example: "
+msgstr "A partir de la versión 1.3.6 es posible personalizar el tamaño de cada video, Ejemplo: "
+
+msgid "Are you satisfied with my work?"
+msgstr "¿Está satisfecho con mi trabajo?"
+
+msgid "Hi, i hope you enjoy my plugin. It took me a lot of hours to make. A lot of crackers and grape juice was spilled during the creation of this plugin. If you like it, you could help me by giving me a fresh coup of coffee."
+msgstr "Hola, espero que disfruten de mi plugin. Me llevó un montón de horas para hacerlo. Una gran cantidad de galletas y jugo de uva se derramó en la creación de este plugin. Si te gusta, me podrías ayudar invitandome un café recién hecho. "
+
+msgid "My name is"
+msgstr "Mi nombre es"
+
+msgid "and I live in Mexico. Yep the country with the best tequila, but is expensive. You could help me out with that if you like my plugin. <br /><br />You can contact me by"
+msgstr "y vivo en Mexico. Sí el país con el mejor tequila , pero es caro. Usted me podría ayudar con eso si te gusta mi plugin. <br /><br />Puede ponerse en contacto conmigo por"
+
+msgid "You can support me by adding"
+msgstr "Puede apoyarme añadiendo"
+
+msgid "my link"
+msgstr "mi enlace"
+
+msgid "on your blogroll."
+msgstr "en su blogroll."
+
+msgid "Downloaded %s times"
+msgstr "Descargado %s veces"
+
+msgid "(Average rating based on %s ratings)"
+msgstr "(Promedio de calificación basada en %s votos)"
+
+msgid "Rate This"
+msgstr "Votar"
+
+msgid "Supported Sites"
+msgstr "Sitios soportados"
+
+msgid "Soon more"
+msgstr "Pronto más"
+
+msgid "Add your favorite video site"
+msgstr "Agregue su sitio de videos favorito"
+
+msgid "here"
+msgstr "aqui"
+
+msgid "Dimensions of the videos"
+msgstr "Dimensiones de los videos"
+
+msgid "Enter the default video size."
+msgstr "Introduzca el tamaño del vídeo por defecto."
+
+msgid "You can also use:"
+msgstr "Tambien puede utilizar:"
+
+msgid "Width"
+msgstr "Ancho"
+
+msgid "Height"
+msgstr "Alto"
+
+msgid "Style (CSS)"
+msgstr "Estilo (CSS)"
+
+msgid "Enable/Disable display videos in comments"
+msgstr "Habilitar/Deshabilitar mostrar videos en los comentarios"
+
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+msgid "Please share this plugin"
+msgstr "Por favor comparta este plugin"
+
+msgid "If you have problems with plugins Disqus Comment System or Intense Debate do not enable this option."
+msgstr "Si tiene problemas con los plugins Disqus Comment System o Intense Debate no habilite esta opción."
+
+msgid "Sorry, site not recognized"
+msgstr "Lo siento, no se reconoce el sitio"
+
+msgid "Add video by using MyVideotag"
+msgstr "Añadir vídeo usando MyVideotag"
+
+msgid "Please enter your video URL"
+msgstr "Por favor, introduzca la URL del vídeo"
+
+msgid "Custom Settings (Optional)"
+msgstr "Configuración personalizada (opcional)"
+
+msgid "Want to know if your favorite site is supported by the plugin?"
+msgstr "¿Quieres saber si tu sitio favorito es soportado por el plugin?"
+
+msgid "Click here"
+msgstr "Click aqui"
+
+msgid "Close"
+msgstr "Cerrar"
+

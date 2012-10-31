@@ -75,7 +75,7 @@
                                     <?
                                     $cat = get_the_category_list();
                                     $cssclass='relpostperson';
-                                    if (strpos($cat, "Show")){
+                                    if (strpos($cat, "Dizi/Film")){
                                         $isShow = true;
                                         $cssclass='relpostshow';
                                     }
@@ -91,7 +91,7 @@
                                     </div>
                                     <div>
                                     <?
-                                    if (!strpos($cat, "Person")) {
+                                    if (!strpos($cat, "Kişiler")) {
                                         $list = get_episodes($isShow);
                                         $first = $isShow ? 1 : 0;
                                         $count= $isShow ? count($list) : 2;

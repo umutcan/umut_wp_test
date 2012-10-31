@@ -1,0 +1,533 @@
+/*START menu censored words*/
+
+.lc-censored-words-form{
+
+}
+
+.lc-censored-words-form input[type="submit"]{
+	display: block;
+}
+
+.lc-censored-words-form textarea{
+	display: block;
+}
+
+/*END menu consored words*/
+
+/*START menu messages*/
+
+.lc-menu-messages-pagination-container{
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;	
+}
+
+.lc-menu-messages-pagination{
+    float: right;
+    margin-left: 5px;	
+}
+
+.lc-menu-messages-pagination input[type="submit"]{
+    margin: 0 !important;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.menu-messages-container{
+    border: 1px solid #DFDFDF;
+    border-radius: 3px 3px 3px 3px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.menu-messages-row-header{
+	background-image: -moz-linear-gradient(50% 0 , #F9F9F9, #ECECEC);
+    border-bottom: 1px solid #DFDFDF;
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+}
+
+.menu-messages-row{
+	min-height: 32px;
+}
+
+.menu-messages-id{
+    float: left;
+    margin-left: 0.5%;
+    width: 9.5%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.menu-messages-message{
+    float: left;
+    margin-left: 0.5%;
+    width: 29.5%;
+    min-height: 32px;
+    line-height: 32px;
+}
+
+.menu-messages-username{
+    float: left;
+    margin-left: 0.5%;
+    width: 19.5%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.menu-messages-date{
+    float: left;
+    margin-left: 0.5%;
+    width: 19.5%;
+    height: 32px;
+    line-height: 32px;
+}
+
+.menu-messages-ip{
+    float: left;
+    margin-left: 0.5%;
+    width: 19.5%;
+    height: 32px;
+    line-height: 32px;
+}
+
+/*menu message table content END*/
+
+.lc-add-banned-ip{
+	margin: 5px 0;
+}
+
+.lc-delete-banned{
+	height: 24px !important;
+	cursor: pointer;
+	float: left;
+}
+
+.lc-banned-ip{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.lc-banned-list-container{
+	width: 300px;
+}
+
+.lc-color-container{
+	position: relative;
+	height: 195px;
+}
+
+.lc-colorpicker{
+	position: absolute;
+	left: 140px;
+	top: 0px;
+}
+
+#lc-user-login{
+	background: url("../img/button-bg.png") repeat-x scroll left top #21759B;
+    border: 1px solid #298CBA;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 74px auto 4px 70px;
+    text-align: center;
+    width: 143px;
+    border-radius: 2px; -webkit-border-radius: 2px;
+}
+
+#lc-user-login:hover{
+	text-decoration: none;
+}
+
+#lc-user-register{
+	background: url("../img/button-bg.png") repeat-x scroll left top #21759B;
+    border: 1px solid #298CBA;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 5px auto 4px 70px;
+    text-align: center;
+    width: 143px;
+    border-radius: 2px; -webkit-border-radius: 2px;
+}
+
+#lc-user-register:hover{
+	text-decoration: none;
+}
+
+#lc-only-members{
+	height: 207px;
+    margin: 4px;
+    width: 285px;
+}
+
+.lc-status-icon-offline{
+	background: url("../img/offline.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 16px;
+    margin: 3px 4px;
+    width: 16px;
+}
+
+.lc-status-icon-online{
+	background: url("../img/online.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 16px;
+    margin: 3px 4px;
+    width: 16px;
+}
+
+.hidden-id{
+	display: none !important;
+}
+
+/*credits*/
+
+.danycode-credits-link{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    width: 440px;
+    border-radius: 4px; -webkit-border-radius: 4px;
+    
+
+  background-color: #EEEEEE;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DDDDDD)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #DDDDDD); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #FFFFFF, #DDDDDD); /* Firefox 3.6-15 */
+  background-image:      -o-linear-gradient(top, #FFFFFF, #DDDDDD); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #FFFFFF, #DDDDDD); /* Firefox 16+ */
+    
+}
+
+.danycode-credits-link p{
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.danycode-credits-link p a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.danycode-credits-link p a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*credits*/
+
+/*reset*/
+
+div, span, p, input[type="text"], input[type="submit"]{
+	font-family: verdana,helvetlca,sans-serif !important;
+	box-shadow: none !important;
+	font-style: normal !important;
+	text-shadow: none !important;
+}
+
+/*reset*/
+
+.live-chat-admin .icon-title h2{
+	font-weight: normal;
+    line-height: 32px;
+    margin-left: 42px;	
+    padding: 0;
+}
+
+.danycode-menu-separator{
+	border-top: 1px solid #DFDFDF;
+	margin: 20px 0;
+}
+
+.live-chat-admin .icon-title{
+	background: url("../img/icon32.png") no-repeat scroll 0 0 transparent;
+}
+
+.lc-msg-right{
+    color: #333333 !important;
+    float: left;
+    padding-left: 36px;
+    min-height: 32px !important;
+    font-family: verdana,helvetlca,sans-serif !important;
+}
+
+.lc-img-left{
+    left: 0;
+    margin-right: 4px;
+    min-height: 32px;
+    min-width: 32px;
+    position: absolute;
+    top: 4px;
+    width: 32px;
+}
+
+.lc-chat-head a{
+    color: #FFFFFF !important;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+.lc-chat-head a:hover{
+	text-decoration: underline;
+	color: #FFFFFF !important;
+}
+
+.live-chat-admin input[type="text"]{
+    padding: 3px 8px;
+    text-align: center;
+    width: 60px;
+}
+
+.live-chat-admin input[type="submit"]{
+	margin-top: 10px;
+}
+
+.live-chat-admin input[type="checkbox"]{
+	display: inline;
+}
+
+.live-chat-admin label{
+	color: #21759B;
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+}
+.live-chat-admin input{
+	display: block;
+	margin-right: 5px;
+}
+
+.live-chat-admin{
+	position: relative;
+	margin-top: 10px;
+}
+
+#lc-set-username-form{
+
+}
+
+#lc-close-icon{
+	background: url("../img/close-icon.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    width: 16px;
+}
+
+#lc-open-icon{
+	background: url("../img/open-icon.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    width: 16px;
+}
+
+#lc-welcome-message{
+    font-size: 12px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    width: 261px;
+    color: #21759B;
+}
+
+#lc-set-username-container{
+	height: 207px;
+    margin: 4px;
+    width: 285px;
+    display: none;
+}
+
+#lc-set-username{
+	background: #fff !important;
+    border: 1px solid #DFDFDF !important;
+    color: #333333 !important;
+    display: block;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-left: 53.5px !important;
+    margin-right: auto;
+    text-align: center;
+    width: 170px;
+    padding: 0 !important;
+    font-weight: normal !important;
+    border-radius: 2px; -webkit-border-radius: 2px;
+}
+
+#lc-chat-now{
+
+	background: url("../img/button-bg.png") repeat-x scroll left top #21759B;
+    border: 1px solid #298CBA;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin: 91px auto 4px 71px;
+    text-align: center;
+    width: 143px;
+    border-radius: 2px; -webkit-border-radius: 2px;
+    padding: 0;
+    
+}
+
+#lc-submit-form{
+    border: 0 none !important;
+    margin: 0 !important;	
+}
+
+.lc-single-message{
+    border-top: 1px solid #DFDFDF !important;
+    font-size: 11px !important;
+    line-height: 14px !important;
+    margin: 4px 4px 4px 0 !important;
+    padding-top: 4px !important;
+    position: relative;
+}
+
+.lc-message-date{
+	color: #aaa;
+}
+
+.lc-message-username{
+	color: #21759B;
+}
+
+.lc-chat-bottom{
+	height: 22px;
+    margin: 4px;
+    display: none;
+}
+
+.lc-chat-middle{
+	height: 230px;
+    margin: 4px;
+    max-height: 230px;
+    max-width: 285px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+.lc-chat-head{
+	margin: 0;
+	height: 22px;
+	border: none !important;
+
+	background: #464646;
+
+	position: relative;
+}
+
+.lc-chat-head p{
+	color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#lc-chat{
+	bottom: 0;
+    position: fixed;
+    right: 10px;
+    
+    width: 293px;
+    height: 22px;
+    border: 1px solid #464646 !important;
+    
+    z-index: 999999;
+    
+    font-family: verdana,helvetlca,sans-serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    
+    background: #f7f7f7;
+}
+
+#lc-message{
+	background: #FFF !important;
+    border: 1px solid #DFDFDF !important;
+    color: #333333;
+    float: left;
+    font-size: 11px;
+    height: 20px;
+    margin: 0 0 0 0 !important;
+    padding: 0 4px;
+    width: 275px;
+    font-weight: normal !important;
+}
+
+#lc-button{
+
+	background-color: #508DDC;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#508DDC), to(#1C62B9));
+	background-image: -webkit-linear-gradient(top, #508DDC, #1C62B9);
+	background-image:    -moz-linear-gradient(top, #508DDC, #1C62B9);
+	background-image:      -o-linear-gradient(top, #508DDC, #1C62B9);
+	background-image:         linear-gradient(to bottom, #508DDC, #1C62B9);
+
+    border: 1px solid #1C62B9 !important;
+    border-radius: 4px; -webkit-border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-family: verdana,helvetlca,sans-serif !important;
+    font-size: 9px;
+    font-weight: normal;
+    height: 22px;
+    line-height: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 50px;
+    display: none;
+}
+
+/* EASY FLOATING BOX */
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+/* Hide from IE-mac /*/
+* html .clearfix{1%;}
+/* End hide from IE-mac */
+/* EASY FLOATING BOX - END */
