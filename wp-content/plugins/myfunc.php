@@ -99,7 +99,7 @@ function get_episodes($isShow) {
 function get_synopsis($text){
     $pos=stripos($text, "konu");
     if($pos>0)
-        return substr($text, $pos);
+        return substr($text, $pos,300)."...";
     else
         return '';
 }

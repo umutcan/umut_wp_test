@@ -375,7 +375,7 @@ function cc_list_posts($atts,$content = null) {
             $tmp .= '<a href="'. get_permalink().'" title="'. get_the_title().'"><img src="'.$thePath[0].'" /></a>';
             $tmp .= '<div class="cover boxcaption">';
             $tmp .= '<h3 style="padding-left:8px;"><a href="'. get_permalink().'" title="'. get_the_title().'">'. get_the_title().'</a></h3>';
-            $tmp .= '<p><a href="'. get_permalink().'" title="'. get_the_title().'">'.substr(get_the_excerpt(), 0, 100).'...</a></p>';
+            $tmp .= '<p><a href="'. get_permalink().'" title="'. get_the_title().'">'.get_synopsis(get_the_excerpt()).'...</a></p>';
             $tmp .= '</div>';
             $tmp .= '</div>'; 
         } else {
@@ -383,7 +383,7 @@ function cc_list_posts($atts,$content = null) {
             if($img_position != 'posts-img-under-content') $tmp .= '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_post_thumbnail().'</a>';
             $tmp .= '<h3><a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_title().'</a></h3>';
             if($height != 'auto'){ $height = str_replace('px','',$height).'px'; }
-            $tmp .= '<p style="height:'.$height.';">'. get_the_excerpt().'<a href="'.get_permalink().'"><br />'.__('read more','cc').'</a></p>';
+            $tmp .= '<p style="height:'.$height.';">'. get_synopsis(get_the_excerpt()).'<a href="'.get_permalink().'"><br />'.__('read more','cc').'</a></p>';
             if($img_position == 'posts-img-under-content') $tmp .= '<a href="'.get_permalink().'" title="'.get_the_title().'">'.get_the_post_thumbnail().'</a>';
             $tmp .= '</div>';
             if($img_position == 'posts-img-left-content-right' || $img_position == 'posts-img-right-content-left') $tmp .= '<div class="clear"></div>';    
@@ -576,7 +576,7 @@ function slider($atts,$content = null) {
             if($caption == 'on'){
                 $tmp .=' <div class="info" >'. chr(13);
                 $tmp .='    <h2><a href="'.$url.'" >'.get_the_title().'</a></h2>'. chr(13);
-                $tmp .='    <p>'.get_synopsis(get_the_excerpt()).'</p>'. chr(13);
+                $tmp .='    <p>'.get_synopsis(get_the_content()).'</p>'. chr(13);
                 $tmp .=' </div>'. chr(13);
             }
             $tmp .='</div>'. chr(13);
