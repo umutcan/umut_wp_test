@@ -90,3 +90,25 @@ div.relcont{
     margin-top: -10px;
     margin-right: 20px;
 }
+
+.recentlistpost{
+    /*width: 200px;*/
+    
+    vertical-align: middle;
+    background-color:#EDEDED; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  height: 100px;
+ 
+}
+
+.recentlisttitle{
+    background-color:#EDEDED; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}

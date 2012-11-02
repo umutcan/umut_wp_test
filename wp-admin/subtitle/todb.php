@@ -8,10 +8,15 @@
 
 /** Loads the WordPress Environment and Template */
 //require('./wp-blog-header.php');
-require_once( dirname(__FILE__) . '/../wp-load.php' );
+if($_SERVER['PHP_SELF']=="/wp/wp-admin/subtitle/todb.php")
+    die("Nereye birader?");
+require_once('../wp-load.php' );
+if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
 if(!isset($_REQUEST["project"])&& !isset($_REQUEST["ep"])&& !isset($_REQUEST["file"]))
-    die("Yeniden deneyiniz");
-
+    wp_die("Yeniden deneyiniz");
+global $wpdb;
 $srt=fopen("../wp-content/uploads/subtitles/".$_REQUEST["file"].".srt", "r");
 if($srt){
     echo "OK<br>";

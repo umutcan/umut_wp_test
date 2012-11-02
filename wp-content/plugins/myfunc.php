@@ -96,4 +96,13 @@ function get_episodes($isShow) {
     
 }
 
+function get_synopsis($text){
+    $pos=stripos($text, "konu");
+    if($pos>0)
+        return substr($text, $pos);
+    else
+        return '';
+}
+
+
 ?>

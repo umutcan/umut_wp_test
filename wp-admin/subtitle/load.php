@@ -1,13 +1,14 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+//require_once('../wp-load.php' );
+if($_SERVER['PHP_SELF']=="/wp/wp-admin/subtitle/load.php")
+    die("Nereye birader?");
+if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
 ?>
 <html>
     <body>
-        <form action="todb.php" method="post">
+        <form action="<?php echo $_SERVER['PHP_SELF']?>?page=sub-man" method="post">
             <table>
                 <tr>
                     <td>Project:</td>
