@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=GMXNW
 Tags: chat, ajax, instant, messaging
 Requires at least: 3.2.1
 Tested up to: 3.4
-Stable Tag: 0.5.1
+Stable Tag: 0.5.3
 
 This plug-in provides a simple chat system integrated into your blog.
 
@@ -54,6 +54,12 @@ AjaxChat searches for your wp-config.php by looking three directories up.  So, i
 4. Chat box "popped out"
 
 == Changelog ==
+
+= 0.5.3 =
+* Bugfix: Don't assume default timezone.  That's rude.
+
+= 0.5.2 =
+* Bugfix: check for weird issue where ajaxchat_ping.php returns "0"
 
 = 0.5.1 =
 * Bugfix: remove any assumptions about short_open_tags

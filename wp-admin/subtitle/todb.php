@@ -11,7 +11,7 @@
 if($_SERVER['PHP_SELF']=="/wp/wp-admin/subtitle/todb.php")
     die("Nereye birader?");
 require_once('../wp-load.php' );
-if ( !current_user_can( 'manage_options' ) )  {
+if ( !current_user_can( 'manage_categories' ) )  {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
 if(!isset($_REQUEST["project"])&& !isset($_REQUEST["ep"])&& !isset($_REQUEST["file"]))
@@ -22,7 +22,7 @@ if($srt){
     echo "OK<br>";
 }else
     die("Shit");
-$project=array("name"=>$_REQUEST["project"],"ep"=>$_REQUEST["ep"]);
+$project=array("name"=>$_REQUEST["project"],"ep"=>$_REQUEST["ep"],"uid"=>  ','.get_current_user_id().','.$_REQUEST["uid"]);
 if($wpdb->insert("subtitle_project",$project))
         $project_id=$wpdb->insert_id;
 else
@@ -36,6 +36,8 @@ while($line=  fgets($srt)){
     if($line==$i+1){
         //echo $entry."<br>";
         //var_dump($entry);
+        if($_REQUEST["lang"]=="tr")
+            $entry["texttr"]=$entry["text"];
         $wpdb->insert("subtitle",$entry);
         $i=$line;
         $entry["line"]=$line;

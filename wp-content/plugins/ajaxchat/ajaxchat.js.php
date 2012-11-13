@@ -278,6 +278,9 @@ get_currentuserinfo();
 		},
 	
 		loadMessages: function(info) {
+			if(info == "0") {
+				return false;
+			}
 			var self = this;
 			var doc=document;
 			var maxid=0;

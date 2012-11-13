@@ -83,7 +83,8 @@
                                         $isShow = true;
                                         $cssclass='relpostshow';
                                     }
-                                    echo "<p><strong>".$relTitle."</strong></p>";
+                                    if (!strpos($cat, "Bölüm")&&!$isShow)
+                                        echo "<p><strong>".$relTitle."</strong></p>";
                                     $list = get_related_posts_list($isShow);
                                     //var_dump($list);
                                    
@@ -99,8 +100,8 @@
                                         
                                     <?
                                     if (!strpos($cat, "Kişiler")) {
-                                        
-                                        echo "<p><strong>Bölümler:</strong></p>";
+                                        if($isShow)
+                                            echo "<p><strong>Bölümler:</strong></p>";
                                         $list = get_episodes($isShow);
                                         $first = $isShow ? 1 : 0;
                                         $count= $isShow ? count($list) : 2;

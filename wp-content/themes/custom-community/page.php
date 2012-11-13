@@ -4,7 +4,7 @@
 		<div class="padder">
 
 		<?php do_action( 'bp_before_blog_page' ) ?>
-
+                    
 		<div class="page" id="blog-page">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -13,11 +13,15 @@
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="entry">
-
+                                                <?php if(stripos(get_the_content(), "--subtitle--")>0): ?>
+                                         
+                                            <? get_subtitle_list($_REQUEST);?>
+                                                <?else :?>
 						<?php the_content( __( '<p class="serif">Read the rest of this page &rarr;</p>', 'cc' ) ); ?>
+                                                
 						<div class="clear"></div>
 						<?php wp_link_pages( array( 'before' => __( '<p class="cc_pagecount"><strong>Pages:</strong> ', 'cc' ), 'after' => '</p>', 'next_or_number' => 'number')); ?>
-
+                                                <?endif;?>    
 					</div>
 					<div class="clear"></div>
 				</div>

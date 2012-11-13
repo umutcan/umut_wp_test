@@ -3,7 +3,7 @@
 Plugin Name: AjaxChat
 Plugin URI: http://paydensutherland.com
 Description: This plugin provides instant messaging between two or more parties viewing your blog.
-Version: 0.5.1
+Version: 0.5.3
 Author: Payden Sutherland
 Author URI: http://paydensutherland.com
 License: GPL2
@@ -25,8 +25,7 @@ License: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 ob_start(); //output buffering to buffer any headers
-date_default_timezone_set('America/New_York');
-define('AJAXCHAT_VERSION','0.5.1');
+define('AJAXCHAT_VERSION','0.5.3');
 define('AJAXCHAT_PATH',dirname(__FILE__));
 require_once('ajaxchat_options.php');
 register_activation_hook(__FILE__,'activate_me');

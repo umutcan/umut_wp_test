@@ -65,7 +65,6 @@ class psdb {
 $psdb=new psdb;
 $t=time();
 $r=$psdb->get_row("SELECT name,starttime,lasttime FROM ajaxim_sess WHERE sessid='".session_id()."'");
-if($psdb->error) { print $psdb->error; }
 if($r==0) {
 	foreach($_COOKIE as $cname=>$cvalue) {
 		if(preg_match('/^wordpress_logged_in/',$cname)) {
@@ -76,7 +75,6 @@ if($r==0) {
 	$name=$name ? $name : "Guest_".getrand(5);
 	$_SESSION['myName']=$name;
 	$psdb->doquery("INSERT INTO ajaxim_sess (name,lasttime,starttime,sessid) VALUES('".$name."',".$t.",".$t.",'".session_id()."')");
-	if($psdb->error) { print $psdb->error; }
 }
 else {
 
@@ -84,7 +82,6 @@ else {
 }
 $_SESSION['lastmsg']=$id;
 $r2=$psdb->query_rows("SELECT name,time,msg,msgid FROM ajaxim_data WHERE time>".($r==0?$t:$r[1])." AND msgid>".$id." ORDER BY time");
-if($psdb->error) { print $psdb->error; }
 if(mysql_num_rows($r2)) {
 	$str="";
 	while($row=mysql_fetch_row($r2)) {
