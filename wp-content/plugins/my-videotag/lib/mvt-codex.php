@@ -14,6 +14,7 @@ array('/video.google.*docid=([^&]*)/i', '<div class="myvideotag" style="width: '
 
 //dailymotion.com
 array('/dailymotion\.com\/video\/([^_]*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><iframe frameborder="0" width="'.$w.'" height="'.$h.'" src="http://www.dailymotion.com/embed/video/{ID_VIDEO}"></iframe></div>'),
+array('/dailymotion\.com\/swf\/video\/([^_]*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><iframe frameborder="0" width="'.$w.'" height="'.$h.'" src="http://www.dailymotion.com/embed/video/{ID_VIDEO}"></iframe></div>'),
 
 //metacafe.com
 array('/metacafe\.com\/watch\/(.*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><div style="background:#000000;width:'.$w.'px;height:'.$h.'px"><embed flashVars="playerVars=showStats=yes|autoPlay=no" src="http://www.metacafe.com/fplayer/{ID_VIDEO}.swf" width="'.$w.'" height="'.$h.'" wmode="transparent" allowFullScreen="true" allowScriptAccess="always" name="Metacafe_5384657" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed></div></div>'),
@@ -209,6 +210,9 @@ array ('/(.*).mp4/i', '<div class="myvideotag" style="width: '.$w.'px;"><embed s
 //upload2.com
 array ('/upload2\.com\/video\/(.*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><iframe width="'.$w.'" scrolling="no" height="'.$h.'" frameborder="0" src="http://upload2.com/embed/{ID_VIDEO}"></iframe></div>'),
 
+//vk.com
+array ('/vk\.com\/video\_ext\.php\?(.*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><iframe width="'.$w.'" scrolling="no" height="'.$h.'" frameborder="0" src="http://vk.com/{ID_VIDEO}"></iframe></div>'),
+    
 //vesti.ru
 array ('/vesti\.ru\/videos\?vid=([^&]*)/i', '<div class="myvideotag" style="width: '.$w.'px;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,29,0" width="'.$w.'" height="'.$h.'" id="flvplayer_videoHost" align="middle"><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><param name="movie" value="http://www.vesti.ru/i/flvplayer_videoHost.swf?vid={ID_VIDEO}&fbv=true&isHome=false" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="devicefont" value="true" /><param name="bgcolor" value="#000000" /><param name="vid" value="{ID_VIDEO}" /><embed src="http://www.vesti.ru/i/flvplayer_videoHost.swf?vid={ID_VIDEO}&fbv=true&isHome=false" quality="high" devicefont="true" bgcolor="#000000" width="'.$w.'" height="'.$h.'" name="flvplayer" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></div>'),
 

@@ -48,8 +48,10 @@ function multi_add_options() {
                 foreach ($videoList as $v) {
                     if(stripos($v,"vk.com")>0)
                             $content.="<iframe width='675' height='375' src='".$v."' ></iframe><br>";
+                    else if(stripos($v,"viki.com")>0)
+                            $content.="[video]".$v."[/video]<br>";
                     else
-                        $content.="[flash width='675' height='375']".$v."[/flash]<br>";
+                            $content.="[video]".$v."[/video]<br>";
                 }
                 
                 $new_post = array(
@@ -58,10 +60,15 @@ function multi_add_options() {
                     'post_status' => 'publish',
                     'post_date' => date('Y-m-d H:i:s'),
                     'post_author' => $user_ID,
-                    'post_type' => 'post',
-                    'post_category' => array($cat->cat_ID)
+                    'post_type' => 'post'
+                    //'post_category' => array($cat->cat_ID)
                 );
+                
                 $post_id = wp_insert_post($new_post);
+                //wp_set_post_terms($post_id, "Bölüm",'category');
+                wp_set_post_categories($post_id, array($cat->cat_ID));
+                $thumbnail_id= get_post_thumbnail_id($data["main"]);
+                set_post_thumbnail($post_id, $thumbnail_id);
                 $episodes[$data["epno-" . $i]]=$post_id;
                 $zc->SaveLink($zcid,$post_id,$data["main"]);
                 //$zc->SaveLink($zcid,$data["main"],$post_id);
@@ -70,7 +77,7 @@ function multi_add_options() {
                // $zc_link_id = $zc->GetLinkIDByPosts($zcfid,$data["main"],$post_id);
                 //$zc->SaveData($zcfid, $zc_link_id, $data["epno-" . $i]);
                 echo $data["epno-" . $i] . "->" . $data["url-" . $i] . "<br>";
-                
+                $content='';
             }
         }
         var_dump($episodes);

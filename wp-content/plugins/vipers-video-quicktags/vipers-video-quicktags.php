@@ -333,7 +333,7 @@ class VipersVideoQuicktags {
 		add_shortcode( 'quicktime', array(&$this, 'shortcode_quicktime') );
 		add_shortcode( 'flash', array(&$this, 'shortcode_flash') );
 		add_shortcode( 'videofile', array(&$this, 'shortcode_videofile') );
-		add_shortcode( 'video', array(&$this, 'shortcode_videofile') ); // Legacy
+		//add_shortcode( 'video', array(&$this, 'shortcode_videofile') ); // Legacy
 		add_shortcode( 'avi', array(&$this, 'shortcode_videofile') ); // Legacy
 		add_shortcode( 'mpeg', array(&$this, 'shortcode_videofile') ); // Legacy
 		add_shortcode( 'wmv', array(&$this, 'shortcode_videofile') ); // Legacy
